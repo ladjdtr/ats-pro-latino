@@ -53,7 +53,7 @@ def generar_adaptacion(cv_texto, job_texto, api_key):
     if not api_key:
         return "Error: Necesitas una API Key de Google Gemini."
     genai.configure(api_key=api_key)
-    model = genai.GenerativeModel('gemini-2.0-flash')
+    model = genai.GenerativeModel('gemini-1.5-pro')
     
     prompt = f"""Eres un reclutador canadiense senior especializado en ATS.
     Reglas:
